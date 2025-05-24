@@ -1,0 +1,39 @@
+[project]
+name = 'Decentralized-Supply-Chain-Risk-Intelligence'
+description = ''
+authors = []
+telemetry = true
+cache_dir = './.cache'
+requirements = []
+[contracts.alert-distribution]
+path = 'contracts/alert-distribution.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.entity-verification]
+path = 'contracts/entity-verification.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.mitigation-coordination]
+path = 'contracts/mitigation-coordination.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.risk-assessment]
+path = 'contracts/risk-assessment.clar'
+clarity_version = 2
+epoch = 2.5
+
+[contracts.risk-data-collection]
+path = 'contracts/risk-data-collection.clar'
+clarity_version = 2
+epoch = 2.5
+[repl.analysis]
+passes = ['check_checker']
+
+[repl.analysis.check_checker]
+strict = false
+trusted_sender = false
+trusted_caller = false
+callee_filter = false
